@@ -6,7 +6,7 @@
 #    By: gbourgeo <gbourgeo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/18 16:01:33 by bmellon           #+#    #+#              #
-#    Updated: 2019/10/25 02:57:49 by gbourgeo         ###   ########.fr        #
+#    Updated: 2020/09/08 13:45:06 by gbourgeo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ ifeq ($(SAN),"1")
 CFLAGS		+= -fsanitize=address
 endif
 
-INCS		= -I$(LFT_DIR)inc -I$(VM_INC_D) -I/Users/naminei/.brew/opt/ncurses/include
+INCS		= -I$(LFT_DIR)inc -I$(VM_INC_D) -I~/.brew/opt/ncurses/include
 LIBS		= -L$(LFT_DIR) -lft -lncurses
 ifeq ($(SAN),"1")
 LIBS		+= -fsanitize=address
